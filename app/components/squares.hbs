@@ -1,0 +1,22 @@
+<div class="gameBox">
+<div class="grid">
+{{#each this.inputArr as |box index|}}
+        {{#if box}}
+        <div class="square" id={{index}}>{{box}}</div>
+        {{else}}
+        <div class="square" id={{index}} {{on "click" (fn this.handleValue index)}}>{{box}}</div>
+        {{/if}}
+{{/each}}
+
+</div>
+<div class="declaration">
+  {{#if this.draw}}
+    <div>This is a draw</div>
+  {{else if this.Winner}}
+       <div>Winner is {{this.Winner}}</div>
+  {{else}}
+      <div >Next PLayer: {{this.fututeValue}}</div>
+  {{/if}}
+ 
+</div> 
+</div>

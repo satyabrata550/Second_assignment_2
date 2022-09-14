@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  h1 {
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  body {
+    background: #f3f3f3;
+  }
+
+
+  .gameBox{
+     margin-left:35vw;
+     display: flex
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw ;
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  .grid > div {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 30px;
+    background-color: yellow;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .declaration{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
